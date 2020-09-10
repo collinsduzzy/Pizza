@@ -28,7 +28,7 @@
         <div class="container">      
             <div class="row">
                 <?php if ($pizzas) {?>
-                    <h3 class="brand-text">Today's orders</h3>
+                    <h3 class="brand-text">Today's Orders</h3>
                     <?php foreach ($pizzas as $pizza ) { ?>
                     <div class="col s6 l4">
                         <div class="card small z-depth-0">
@@ -36,8 +36,8 @@
                             <img src="img/pizzas.png" alt="" class="responsive-img">
                         </div>
                             <div class="card-content grey-text">
-                            <div class="card-title brand-text center">
-                                <h6><?php echo htmlspecialchars($pizza['name']) ?></h6>
+                            <div class="card-title center">
+                                <h6 class="brand-text brand-text-bold"><?php echo htmlspecialchars($pizza['name']) ?></h6>
                             </div>
                             </div>
                             <div class="card-action right-align">
